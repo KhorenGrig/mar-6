@@ -1,9 +1,9 @@
-// this.name = 'THIS IS THE GLOBAL OBJECT';
+this.name = 'THIS IS THE GLOBAL OBJECT';
 
-// const obj = {
-//   name: 'a',
-//   age: 14
-// };
+const obj = {
+  name: 'a',
+  age: 14
+};
 
 
 // const ff = () =>{
@@ -79,35 +79,35 @@
 
 
 
-const resrej = () => {
-  let number = Math.random();
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      if (number > 0.5) {
-        res('Number is more then 0.5');
-      }
-    }, 500)
+// const resrej = () => {
+//   let number = Math.random();
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       if (number > 0.5) {
+//         res('Number is more then 0.5');
+//       }
+//     }, 500)
 
-    setTimeout(() => {
-      if (number <= 0.5) {
-        rej('Number less or equal 0.5');
-      }
-    }, 500)
-  });
-}
+//     setTimeout(() => {
+//       if (number <= 0.5) {
+//         rej('Number less or equal 0.5');
+//       }
+//     }, 500)
+//   });
+// }
 
-const aaa = async () => {
+// const aaa = async () => {
 
-  try {
-    const rrr = await resrej();
-    console.log(rrr);
-  } catch (er) {
-    console.log(er)
-  }
+//   try {
+//     const rrr = await resrej();
+//     console.log(rrr);
+//   } catch (er) {
+//     console.log(er)
+//   }
 
-}
+// }
 
-aaa();
+// aaa();
 
 
 
